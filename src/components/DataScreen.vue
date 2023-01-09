@@ -85,8 +85,8 @@ export default {
     };
   },
   props: ["data", "recentSol"],
-  mounted: function() {
-    this.$nextTick(function() {});
+  mounted: function () {
+    this.$nextTick(function () {});
   },
   methods: {
     startDataScreen() {
@@ -119,7 +119,7 @@ export default {
       let month = this.months[parseInt(dateStrings[1]) - 1];
       let day = parseInt(dateStrings[2]);
       let year = parseInt(dateStrings[0]);
-      this.recentTempTimeStamp = `${month.slice(0, 3)} ${day} ${year}`;
+      this.recentTempTimeStamp = `${month.slice(0, 3)} ${day}, ${year}`;
     },
     setDataPoints() {},
   },
